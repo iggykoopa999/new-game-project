@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://bhgsh06nhaej0" path="res://download.jpg" id="2_112p8"]
 [ext_resource type="Texture2D" uid="uid://de5ybx1yjm0ef" path="res://download (1).jpg" id="3_112p8"]
 [ext_resource type="PackedScene" uid="uid://ndr3uu7qxquq" path="res://dead_guy.tscn" id="4_bss38"]
+[ext_resource type="Texture2D" uid="uid://dr0uuvd6kclq0" path="res://pngtree-halloween-horror-red-bloodstain-png-image_6174065.png" id="5_qn3nj"]
 [ext_resource type="Texture2D" uid="uid://c8rttqu5bq1j5" path="res://download (2).jpg" id="5_tda05"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_iywte"]
@@ -19,7 +20,7 @@ radius = 133.03383
 position = Vector2(115, 36)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node2D" unique_id=1233776567]
-position = Vector2(457.24994, 285.25)
+position = Vector2(470.99994, 287.00003)
 scale = Vector2(1.6032076, 1.732)
 texture = ExtResource("1_tda05")
 
@@ -52,10 +53,17 @@ shape = SubResource("CircleShape2D_ed7rr")
 
 [node name="HeldDeadGuy" type="Sprite2D" parent="Node2D/player" unique_id=569820653]
 visible = false
-position = Vector2(-107.99988, -71.99997)
+position = Vector2(-111.99994, -15.999996)
 rotation = -0.82928896
 scale = Vector2(0.9122621, 0.7116149)
 texture = ExtResource("3_112p8")
+
+[node name="PngtreeHalloweenHorrorRedBloodstainPngImage6174065" type="Sprite2D" parent="Node2D/player/HeldDeadGuy" unique_id=146545566]
+position = Vector2(-15.087128, 10.091339)
+rotation = 1.5867164
+scale = Vector2(0.77673, 0.8861944)
+skew = 0.010239601
+texture = ExtResource("5_qn3nj")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="Node2D/player" unique_id=449165330]
 
@@ -67,7 +75,7 @@ offset_bottom = 23.0
 position = Vector2(675, 359)
 
 [node name="DeadGuy2" parent="Node2D" unique_id=453539701 instance=ExtResource("4_bss38")]
-position = Vector2(243, 350)
+position = Vector2(221, 381)
 
 [node name="DeadGuy3" parent="Node2D" unique_id=2050660203 instance=ExtResource("4_bss38")]
 position = Vector2(885, 205)
