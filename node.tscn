@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://ndr3uu7qxquq" path="res://dead_guy.tscn" id="4_bss38"]
 [ext_resource type="Texture2D" uid="uid://dr0uuvd6kclq0" path="res://pngtree-halloween-horror-red-bloodstain-png-image_6174065.png" id="5_qn3nj"]
 [ext_resource type="Texture2D" uid="uid://c8rttqu5bq1j5" path="res://download (2).jpg" id="5_tda05"]
+[ext_resource type="Texture2D" uid="uid://cwfeuic64dy2" path="res://Black-Rectangle-PNG-Image.png" id="8_l6pdb"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_iywte"]
 radius = 78.45913
@@ -14,14 +15,17 @@ radius = 78.45913
 [sub_resource type="CircleShape2D" id="CircleShape2D_ed7rr"]
 radius = 133.03383
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oy2km"]
+size = Vector2(51.330765, 12.8)
+
 [node name="Node" type="Node" unique_id=962992903]
 
 [node name="Node2D" type="Node2D" parent="." unique_id=30142450]
 position = Vector2(115, 36)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node2D" unique_id=1233776567]
-position = Vector2(470.99994, 287.00003)
-scale = Vector2(1.6032076, 1.732)
+position = Vector2(455, 300.00003)
+scale = Vector2(1.6579497, 1.8259999)
 texture = ExtResource("1_tda05")
 
 [node name="Cave" type="Area2D" parent="Node2D" unique_id=1938549465 groups=["Cave"]]
@@ -41,19 +45,19 @@ position = Vector2(-43, 111)
 script = ExtResource("1_j2q8x")
 
 [node name="Sprite 2D" type="Sprite2D" parent="Node2D/player" unique_id=1836661206]
-position = Vector2(7, 1)
+position = Vector2(131, 111)
 scale = Vector2(1.2195122, 1.6081082)
 texture = ExtResource("2_112p8")
 
 [node name="Pickup Area" type="Area2D" parent="Node2D/player" unique_id=537029618]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/player/Pickup Area" unique_id=1856311719]
-position = Vector2(-2, 3)
+position = Vector2(133, 117)
 shape = SubResource("CircleShape2D_ed7rr")
 
 [node name="HeldDeadGuy" type="Sprite2D" parent="Node2D/player" unique_id=569820653]
 visible = false
-position = Vector2(-111.99994, -15.999996)
+position = Vector2(25.999985, 23)
 rotation = -0.82928896
 scale = Vector2(0.9122621, 0.7116149)
 texture = ExtResource("3_112p8")
@@ -72,12 +76,24 @@ offset_right = 40.0
 offset_bottom = 23.0
 
 [node name="DeadGuy" parent="Node2D" unique_id=1579342386 instance=ExtResource("4_bss38")]
-position = Vector2(675, 359)
+position = Vector2(580, 152)
 
 [node name="DeadGuy2" parent="Node2D" unique_id=453539701 instance=ExtResource("4_bss38")]
-position = Vector2(221, 381)
+position = Vector2(186, 530)
 
 [node name="DeadGuy3" parent="Node2D" unique_id=2050660203 instance=ExtResource("4_bss38")]
-position = Vector2(885, 205)
+position = Vector2(975, 95)
+
+[node name="WallUp" type="Sprite2D" parent="Node2D" unique_id=182059291]
+position = Vector2(463, -154)
+scale = Vector2(1.2945454, 1)
+texture = ExtResource("8_l6pdb")
+
+[node name="Area2D" type="Area2D" parent="Node2D/WallUp" unique_id=390141558]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/WallUp" unique_id=1365422216]
+position = Vector2(10.428375, 1)
+scale = Vector2(20, 20)
+shape = SubResource("RectangleShape2D_oy2km")
 
 [connection signal="area_entered" from="Node2D/player/Pickup Area" to="Node2D/player" method="_on_pickup_area_area_entered"]
