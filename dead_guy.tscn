@@ -2,8 +2,8 @@
 
 [ext_resource type="Texture2D" uid="uid://de5ybx1yjm0ef" path="res://download (1).jpg" id="1_c3adt"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_dqawc"]
-radius = 120.33703
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l6pdb"]
+size = Vector2(256, 148)
 
 [node name="Dead Guy" type="Area2D" unique_id=1579342386 groups=["dead guy"]]
 
@@ -12,5 +12,5 @@ position = Vector2(-165, 42)
 texture = ExtResource("1_c3adt")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=803916701]
-position = Vector2(-164, 40)
-shape = SubResource("CircleShape2D_dqawc")
+position = Vector2(-165, 42)
+shape = SubResource("RectangleShape2D_l6pdb")
