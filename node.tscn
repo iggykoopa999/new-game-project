@@ -2,918 +2,1116 @@
 
 [ext_resource type="Script" uid="uid://dgemna2cprj7k" path="res://player.gd" id="1_j2q8x"]
 [ext_resource type="Script" uid="uid://biyvqexlq5hng" path="res://therealplayer.gd" id="1_l6pdb"]
-[ext_resource type="Texture2D" uid="uid://b4aco0xi5srku" path="res://d44e509c9daa8bd1750017094f16bfcd.jpg" id="1_qn3nj"]
 [ext_resource type="Script" uid="uid://cda7f7pvv40ta" path="res://node.gd" id="1_r657h"]
-[ext_resource type="Texture2D" uid="uid://d4hyje3p6oefy" path="res://Screenshot 2026-11-15 104921.png" id="3_qn3nj"]
-[ext_resource type="Texture2D" uid="uid://d0g2m5gtghc2v" path="res://Screenshot 2026-11-15 103246.png" id="4_qn3nj"]
-[ext_resource type="Texture2D" uid="uid://bykk0lmp4x0i5" path="res://Screenshot 2026-11-15 113430.png" id="6_l6pdb"]
-[ext_resource type="Texture2D" uid="uid://cs25wxt3ux4t4" path="res://Screenshot 2026-11-15 102031.png" id="7_l6pdb"]
+[ext_resource type="Texture2D" uid="uid://c7i1y3p2dw3m7" path="res://Screenshot 2026-11-15 123943.png" id="2_l6pdb"]
+[ext_resource type="Texture2D" uid="uid://bmymr14ro5ohg" path="res://Screenshot_2026-11-15_104921-removebg-preview.png" id="3_l6pdb"]
+[ext_resource type="Texture2D" uid="uid://l53iaj7e7ewu" path="res://Screenshot_2026-11-15_103246-removebg-preview.png" id="5_r657h"]
+[ext_resource type="Texture2D" uid="uid://k32pbvm472lf" path="res://Screenshot_2026-11-15_113430-removebg-preview.png" id="6_f0urt"]
+[ext_resource type="Texture2D" uid="uid://bg27qudfqvd3i" path="res://Screenshot_2026-11-15_102031-removebg-preview.png" id="8_l6pdb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c3adt"]
-size = Vector2(41.274895, 24.025974)
+size = Vector2(34.1992, 11.051949)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_2k508"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qn3nj")
+"texture": ExtResource("5_r657h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_l6pdb")
+"texture": ExtResource("6_f0urt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_r657h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_f0urt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_r657h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_f0urt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_r657h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_f0urt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_r657h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_f0urt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_r657h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_f0urt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_r657h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_f0urt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_r657h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_f0urt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_r657h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_f0urt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_r657h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_f0urt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_r657h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_f0urt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_r657h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_f0urt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_r657h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_f0urt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_r657h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_f0urt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_r657h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_f0urt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_r657h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_f0urt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_r657h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_f0urt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_r657h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_f0urt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_r657h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_f0urt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_r657h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_f0urt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_r657h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_f0urt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_r657h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_f0urt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_r657h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_f0urt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_r657h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_f0urt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_r657h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_f0urt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_r657h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_f0urt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_r657h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_f0urt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_r657h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_f0urt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_r657h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_f0urt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_r657h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_f0urt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_r657h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_f0urt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_r657h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_f0urt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_r657h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_f0urt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_r657h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_f0urt")
 }],
 "loop": 2,
 "name": &"Run",
@@ -921,10 +1119,10 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ed7rr"]
-size = Vector2(445.32114, 478.96857)
+size = Vector2(432.14597, 465.07483)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r657h"]
-size = Vector2(53, 40)
+size = Vector2(66, 52)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_oy2km"]
 size = Vector2(55.13519, 10.425001)
@@ -944,20 +1142,20 @@ script = ExtResource("1_r657h")
 [node name="Node2D" type="Node2D" parent="." unique_id=30142450]
 position = Vector2(115, 36)
 
-[node name="D44e509c9Daa8Bd1750017094f16Bfcd" type="Sprite2D" parent="Node2D" unique_id=861755862]
-position = Vector2(-51.249977, 210.81252)
-scale = Vector2(1.1914063, 1.0940971)
-texture = ExtResource("1_qn3nj")
+[node name="Screenshot20261115123943" type="Sprite2D" parent="Node2D" unique_id=549662795]
+position = Vector2(346.00003, 266)
+scale = Vector2(1.8038654, 1.2095765)
+texture = ExtResource("2_l6pdb")
 
 [node name="Cave" type="Area2D" parent="Node2D" unique_id=1938549465 groups=["Cave"]]
 
 [node name="Sprite2D" type="Sprite2D" parent="Node2D/Cave" unique_id=417993612]
-position = Vector2(-46.000004, 2.000001)
-scale = Vector2(0.08840988, 0.08747936)
-texture = ExtResource("3_qn3nj")
+position = Vector2(-49, 65.99999)
+scale = Vector2(0.14547117, 0.14394009)
+texture = ExtResource("3_l6pdb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Cave" unique_id=1894813215]
-position = Vector2(-46, 17)
+position = Vector2(-49, 87.49999)
 scale = Vector2(1.695946, 2.0810812)
 shape = SubResource("RectangleShape2D_c3adt")
 
@@ -966,13 +1164,14 @@ position = Vector2(-115, -36)
 script = ExtResource("1_l6pdb")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Node2D/Cave/THEREALPLAYER" unique_id=616789202]
-position = Vector2(68, 54)
-scale = Vector2(0.135596, 0.1539004)
+position = Vector2(67, 117.99999)
+scale = Vector2(0.16599436, 0.18840228)
 sprite_frames = SubResource("SpriteFrames_2k508")
 animation = &"Run"
+frame = 6
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Cave/THEREALPLAYER" unique_id=980755519]
-position = Vector2(68, 53.9375)
+position = Vector2(66.000015, 118.00001)
 scale = Vector2(0.1897507, 0.17094024)
 shape = SubResource("RectangleShape2D_ed7rr")
 
@@ -982,18 +1181,18 @@ collision_mask = 5
 script = ExtResource("1_j2q8x")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/player" unique_id=594809712]
-position = Vector2(367, -94)
+position = Vector2(1039, 326)
 shape = SubResource("RectangleShape2D_r657h")
 
 [node name="Sprite 2D" type="Sprite2D" parent="Node2D/player" unique_id=1836661206]
-position = Vector2(367, -94)
-scale = Vector2(0.08411474, 0.08387196)
-texture = ExtResource("7_l6pdb")
+position = Vector2(1039, 326.99997)
+scale = Vector2(0.13586932, 0.13547717)
+texture = ExtResource("8_l6pdb")
 
 [node name="Pickup Area" type="Area2D" parent="Node2D/player" unique_id=537029618]
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/player/Pickup Area" unique_id=2032454031]
-position = Vector2(366.5, -94)
+position = Vector2(1039, 326)
 shape = SubResource("RectangleShape2D_r657h")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="Node2D/player" unique_id=449165330]
@@ -1008,18 +1207,18 @@ collision_mask = 5
 script = ExtResource("1_j2q8x")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/player5" unique_id=684929983]
-position = Vector2(642, -54)
+position = Vector2(879, 402)
 shape = SubResource("RectangleShape2D_r657h")
 
 [node name="Sprite 2D" type="Sprite2D" parent="Node2D/player5" unique_id=1036037994]
-position = Vector2(642, -53.999996)
-scale = Vector2(0.08367073, 0.083612055)
-texture = ExtResource("7_l6pdb")
+position = Vector2(880.00006, 403)
+scale = Vector2(0.1354422, 0.13534722)
+texture = ExtResource("8_l6pdb")
 
 [node name="Pickup Area" type="Area2D" parent="Node2D/player5" unique_id=345564587]
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/player5/Pickup Area" unique_id=971251112]
-position = Vector2(642, -54)
+position = Vector2(879, 402)
 shape = SubResource("RectangleShape2D_r657h")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="Node2D/player5" unique_id=1210132099]
@@ -1034,18 +1233,18 @@ collision_mask = 5
 script = ExtResource("1_j2q8x")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/player6" unique_id=1229200117]
-position = Vector2(862, -19)
+position = Vector2(1028, 445)
 shape = SubResource("RectangleShape2D_r657h")
 
 [node name="Sprite 2D" type="Sprite2D" parent="Node2D/player6" unique_id=1354102643]
-position = Vector2(862, -19.000004)
-scale = Vector2(0.08367074, 0.08361204)
-texture = ExtResource("7_l6pdb")
+position = Vector2(1029, 443.99997)
+scale = Vector2(0.13767098, 0.13757439)
+texture = ExtResource("8_l6pdb")
 
 [node name="Pickup Area" type="Area2D" parent="Node2D/player6" unique_id=492176181]
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/player6/Pickup Area" unique_id=2089848234]
-position = Vector2(862, -19)
+position = Vector2(1028, 445)
 shape = SubResource("RectangleShape2D_r657h")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="Node2D/player6" unique_id=2086796366]
@@ -1060,18 +1259,18 @@ collision_mask = 5
 script = ExtResource("1_j2q8x")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/player4" unique_id=2007602328]
-position = Vector2(237.94958, 461.5)
+position = Vector2(956, 399)
 shape = SubResource("RectangleShape2D_r657h")
 
 [node name="Sprite 2D" type="Sprite2D" parent="Node2D/player4" unique_id=1403708316]
-position = Vector2(238, 461.5)
-scale = Vector2(0.083670706, 0.08528435)
-texture = ExtResource("7_l6pdb")
+position = Vector2(957, 397)
+scale = Vector2(0.11979044, 0.12210067)
+texture = ExtResource("8_l6pdb")
 
 [node name="Pickup Area" type="Area2D" parent="Node2D/player4" unique_id=584988350]
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/player4/Pickup Area" unique_id=393368802]
-position = Vector2(237.94958, 461.5)
+position = Vector2(956, 399)
 shape = SubResource("RectangleShape2D_r657h")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="Node2D/player4" unique_id=1521931546]
@@ -1086,18 +1285,18 @@ collision_mask = 5
 script = ExtResource("1_j2q8x")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/player7" unique_id=1459401801]
-position = Vector2(185, 224)
+position = Vector2(865, 464)
 shape = SubResource("RectangleShape2D_r657h")
 
 [node name="Sprite 2D" type="Sprite2D" parent="Node2D/player7" unique_id=458051256]
-position = Vector2(185, 224)
-scale = Vector2(0.08367068, 0.08361199)
-texture = ExtResource("7_l6pdb")
+position = Vector2(864, 463)
+scale = Vector2(0.1176123, 0.1175298)
+texture = ExtResource("8_l6pdb")
 
 [node name="Pickup Area" type="Area2D" parent="Node2D/player7" unique_id=468345354]
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/player7/Pickup Area" unique_id=1995994277]
-position = Vector2(185, 224)
+position = Vector2(865, 464)
 shape = SubResource("RectangleShape2D_r657h")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="Node2D/player7" unique_id=1156723154]
@@ -1112,18 +1311,18 @@ collision_mask = 5
 script = ExtResource("1_j2q8x")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/player3" unique_id=2110946865]
-position = Vector2(758, 395)
+position = Vector2(955, 462)
 shape = SubResource("RectangleShape2D_r657h")
 
 [node name="Sprite 2D" type="Sprite2D" parent="Node2D/player3" unique_id=231537291]
-position = Vector2(758, 394.5)
-scale = Vector2(0.08367074, 0.08528433)
-texture = ExtResource("7_l6pdb")
+position = Vector2(957.00006, 463.00003)
+scale = Vector2(0.12599258, 0.12842232)
+texture = ExtResource("8_l6pdb")
 
 [node name="Pickup Area" type="Area2D" parent="Node2D/player3" unique_id=1627890303]
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/player3/Pickup Area" unique_id=949940169]
-position = Vector2(758, 394.875)
+position = Vector2(955, 462)
 shape = SubResource("RectangleShape2D_r657h")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="Node2D/player3" unique_id=588039781]
@@ -1138,18 +1337,18 @@ collision_mask = 5
 script = ExtResource("1_j2q8x")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/player8" unique_id=1711595671]
-position = Vector2(809, 199)
+position = Vector2(1037, 385)
 shape = SubResource("RectangleShape2D_r657h")
 
 [node name="Sprite 2D" type="Sprite2D" parent="Node2D/player8" unique_id=1158365825]
-position = Vector2(809, 199.5)
-scale = Vector2(0.08367074, 0.0852843)
-texture = ExtResource("7_l6pdb")
+position = Vector2(1036, 386)
+scale = Vector2(0.13290067, 0.1354636)
+texture = ExtResource("8_l6pdb")
 
 [node name="Pickup Area" type="Area2D" parent="Node2D/player8" unique_id=1102136884]
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/player8/Pickup Area" unique_id=496462624]
-position = Vector2(809, 199)
+position = Vector2(1037, 385)
 shape = SubResource("RectangleShape2D_r657h")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="Node2D/player8" unique_id=1366881182]
@@ -1164,18 +1363,18 @@ collision_mask = 5
 script = ExtResource("1_j2q8x")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/player2" unique_id=11307003]
-position = Vector2(-5, 158)
+position = Vector2(964, 335)
 shape = SubResource("RectangleShape2D_r657h")
 
 [node name="Sprite 2D" type="Sprite2D" parent="Node2D/player2" unique_id=2002857952]
-position = Vector2(-5.052807, 157.96115)
-scale = Vector2(0.08381324, 0.083741985)
-texture = ExtResource("7_l6pdb")
+position = Vector2(965, 334)
+scale = Vector2(0.1176949, 0.11759482)
+texture = ExtResource("8_l6pdb")
 
 [node name="Pickup Area" type="Area2D" parent="Node2D/player2" unique_id=1686214851]
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/player2/Pickup Area" unique_id=885755622]
-position = Vector2(-5, 158)
+position = Vector2(965, 335)
 shape = SubResource("RectangleShape2D_r657h")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="Node2D/player2" unique_id=1937176727]
