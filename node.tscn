@@ -11,7 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://c3ebf8m4j8mpt" path="res://PottermoreGiantClutchingDeerConceptArt_-_cropped.webp" id="7_qn3nj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ed7rr"]
-size = Vector2(727.2702, 1169.9998)
+size = Vector2(332.0146, 535.2749)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c3adt"]
 size = Vector2(41.164345, 32.915585)
@@ -49,12 +49,12 @@ script = ExtResource("1_l6pdb")
 [node name="Sprite2D" type="Sprite2D" parent="Node2D/THEREALPLAYER" unique_id=74914955]
 
 [node name="PottermoreGiantClutchingDeerConceptArtCropped" type="Sprite2D" parent="Node2D/THEREALPLAYER" unique_id=805079944]
-position = Vector2(70.00006, 101)
-scale = Vector2(0.1897507, 0.17094024)
+position = Vector2(110, 111)
+scale = Vector2(0.08760389, 0.078919485)
 texture = ExtResource("7_qn3nj")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/THEREALPLAYER" unique_id=980755519]
-position = Vector2(70, 101)
+position = Vector2(110, 111)
 scale = Vector2(0.1897507, 0.17094024)
 shape = SubResource("RectangleShape2D_ed7rr")
 
@@ -364,11 +364,11 @@ position = Vector2(-5, 158)
 scale = Vector2(0.2920681, 0.3851352)
 texture = ExtResource("2_112p8")
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/player2" unique_id=885755622]
+[node name="Pickup Area" type="Area2D" parent="Node2D/player2" unique_id=1686214851]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/player2/Pickup Area" unique_id=885755622]
 position = Vector2(-5, 158)
 shape = SubResource("RectangleShape2D_r657h")
-
-[node name="Pickup Area" type="Area2D" parent="Node2D/player2" unique_id=1686214851]
 
 [node name="HeldDeadGuy" type="Sprite2D" parent="Node2D/player2" unique_id=1297653074]
 visible = false
@@ -392,6 +392,9 @@ offset_top = -41.0
 offset_right = 1401.0
 offset_bottom = -18.0
 text = "Score : 0"
+
+[node name="Timer" type="Timer" parent="Node2D" unique_id=249982944]
+wait_time = 5.0
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=252674205]
 disable_mode = 1
