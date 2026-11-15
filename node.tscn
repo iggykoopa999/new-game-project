@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://mnwrs2720gui" path="res://Screenshot_2026-11-15_132019-removebg-preview.png" id="9_f0urt"]
 [ext_resource type="Texture2D" uid="uid://ckhildgbiim3d" path="res://Screenshot_2026-11-15_132143-removebg-preview.png" id="10_jfkdj"]
 [ext_resource type="Texture2D" uid="uid://db8jh65cpr2og" path="res://Screenshot_2026-11-15_104352-removebg-preview.png" id="11_jfkdj"]
+[ext_resource type="Texture2D" uid="uid://ov4rqxpvx1yk" path="res://premium_vector-1747805833449-d1ebb1f5666e.jpg" id="12_wt6go"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r657h"]
 size = Vector2(66, 52)
@@ -1452,7 +1453,7 @@ scale = Vector2(0.14371258, 0.1445783)
 texture = ExtResource("9_f0urt")
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Cave4" unique_id=2114219708]
-position = Vector2(-96, 24)
+position = Vector2(-90, 39)
 scale = Vector2(1.6959461, 2.0810812)
 shape = SubResource("RectangleShape2D_c3adt")
 
@@ -1465,7 +1466,7 @@ scale = Vector2(0.14547117, 0.14394009)
 texture = ExtResource("3_l6pdb")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Cave" unique_id=1894813215]
-position = Vector2(-66.5, 38.320328)
+position = Vector2(-90.999985, 43.000004)
 scale = Vector2(1.695946, 2.0810812)
 shape = SubResource("RectangleShape2D_c3adt")
 
@@ -1479,7 +1480,7 @@ scale = Vector2(0.08457009, 0.067074515)
 texture = ExtResource("10_jfkdj")
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="Cave2" unique_id=1693975120]
-position = Vector2(-232.92828, -114.80519)
+position = Vector2(-221.7251, -103.27272)
 shape = SubResource("RectangleShape2D_c3adt")
 
 [node name="Cave3" type="Area2D" parent="." unique_id=1595445528]
@@ -1491,8 +1492,8 @@ position = Vector2(-192.83267, -88.376625)
 scale = Vector2(0.085521646, 0.07351947)
 texture = ExtResource("11_jfkdj")
 
-[node name="CollisionShape2D5" type="CollisionShape2D" parent="Cave3" unique_id=1967505853]
-position = Vector2(-251.20717, -125.37662)
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="Cave3" unique_id=1967505853 groups=["barriers"]]
+position = Vector2(-224.08366, -105.67532)
 shape = SubResource("RectangleShape2D_c3adt")
 
 [node name="THEREALPLAYER" type="CharacterBody2D" parent="." unique_id=1312716994]
@@ -1509,6 +1510,12 @@ frame = 6
 position = Vector2(188.00002, 104.00001)
 scale = Vector2(0.1897507, 0.17094024)
 shape = SubResource("RectangleShape2D_ed7rr")
+
+[node name="game_over" type="Sprite2D" parent="." unique_id=1251945332]
+visible = false
+position = Vector2(588, 325)
+scale = Vector2(0.396, 0.325)
+texture = ExtResource("12_wt6go")
 
 [connection signal="area_entered" from="Node2D/player/Pickup Area" to="Node2D/player" method="_on_pickup_area_area_entered"]
 [connection signal="area_entered" from="Node2D/player5/Pickup Area" to="Node2D/player5" method="_on_pickup_area_area_entered"]

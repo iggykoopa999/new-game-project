@@ -29,7 +29,10 @@ func _on_pickup_area_area_entered(area: Area2D) -> void:
 			elif child is CollisionShape2D:
 				child.queue_free()
 		queue_free()
-
+	elif area.name == "Cave3":
+		var screen = get_tree().current_scene.find_child("game_over", true, false)
+		if screen:
+			screen.visible = true
 @onready var timer = $Timer
 
 
