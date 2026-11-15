@@ -4,6 +4,7 @@ var DeadGuy_count = 0
 
 var speed = 500
 
+
 func _ready():
 	velocity = Vector2 (-200,200).normalized() * speed
 	
@@ -16,11 +17,8 @@ func _physics_process(delta):
 
 
 func _on_pickup_area_area_entered(area: Area2D) -> void:
-	if area.is_in_group("dead guy") and not $HeldDeadGuy.visible:
-		area.queue_free()
-		$HeldDeadGuy.visible = true
-		
-	if area.is_in_group("Cave") and $HeldDeadGuy.visible:
-		$HeldDeadGuy.visible = false
+	if area.is_in_group("Cave"):
+		visible = false
 		DeadGuy_count +=1
 		$CanvasLayer/DeadGuyDisplay.text = "DeadGuy: " + str(DeadGuy_count)
+		queue_free()
