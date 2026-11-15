@@ -13,7 +13,7 @@
 size = Vector2(727.2702, 1169.9998)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c3adt"]
-size = Vector2(75.0319, 63.428566)
+size = Vector2(41.164345, 32.915585)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r657h"]
 size = Vector2(47.4375, 56.5)
@@ -39,8 +39,8 @@ size = Vector2(176, 667.5)
 position = Vector2(115, 36)
 
 [node name="D44e509c9Daa8Bd1750017094f16Bfcd" type="Sprite2D" parent="Node2D" unique_id=861755862]
-position = Vector2(472.00003, 292.49997)
-scale = Vector2(0.76458335, 0.71203697)
+position = Vector2(-51.249977, 210.81252)
+scale = Vector2(1.1914063, 1.0940971)
 texture = ExtResource("1_qn3nj")
 
 [node name="THEREALPLAYER" type="CharacterBody2D" parent="Node2D" unique_id=1312716994]
@@ -62,12 +62,12 @@ shape = SubResource("RectangleShape2D_ed7rr")
 [node name="Cave" type="Area2D" parent="Node2D" unique_id=1938549465 groups=["Cave"]]
 
 [node name="Sprite2D" type="Sprite2D" parent="Node2D/Cave" unique_id=417993612]
-position = Vector2(963.00006, 447)
-scale = Vector2(0.85810775, 0.89864874)
+position = Vector2(-46, 3.9999962)
+scale = Vector2(0.4679055, 0.45777032)
 texture = ExtResource("5_tda05")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Cave" unique_id=1894813215]
-position = Vector2(962, 447)
+position = Vector2(-46, 3.9999998)
 scale = Vector2(1.695946, 2.0810812)
 shape = SubResource("RectangleShape2D_c3adt")
 
@@ -111,6 +111,86 @@ texture = ExtResource("5_qn3nj")
 offset_right = 40.0
 offset_bottom = 23.0
 
+[node name="player5" type="CharacterBody2D" parent="Node2D" unique_id=1142393661 groups=["player"]]
+position = Vector2(-43, 111)
+collision_mask = 5
+script = ExtResource("1_j2q8x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/player5" unique_id=684929983]
+position = Vector2(642, -54)
+shape = SubResource("RectangleShape2D_r657h")
+
+[node name="Sprite 2D" type="Sprite2D" parent="Node2D/player5" unique_id=1036037994]
+position = Vector2(642.00006, -54)
+scale = Vector2(0.2920681, 0.3851352)
+texture = ExtResource("2_112p8")
+
+[node name="Pickup Area" type="Area2D" parent="Node2D/player5" unique_id=345564587]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/player5/Pickup Area" unique_id=971251112]
+position = Vector2(642, -54)
+shape = SubResource("RectangleShape2D_r657h")
+
+[node name="HeldDeadGuy" type="Sprite2D" parent="Node2D/player5" unique_id=2062686236]
+visible = false
+position = Vector2(25.999985, 23)
+rotation = -0.82928896
+scale = Vector2(0.9122621, 0.7116149)
+texture = ExtResource("3_112p8")
+
+[node name="PngtreeHalloweenHorrorRedBloodstainPngImage6174065" type="Sprite2D" parent="Node2D/player5/HeldDeadGuy" unique_id=2027126445]
+position = Vector2(-15.087128, 10.091339)
+rotation = 1.5867164
+scale = Vector2(0.77673, 0.8861944)
+skew = 0.010239601
+texture = ExtResource("5_qn3nj")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Node2D/player5" unique_id=1210132099]
+
+[node name="DeadGuyDisplay" type="Label" parent="Node2D/player5/CanvasLayer" unique_id=633102701]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="player6" type="CharacterBody2D" parent="Node2D" unique_id=356641655 groups=["player"]]
+position = Vector2(-43, 111)
+collision_mask = 5
+script = ExtResource("1_j2q8x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/player6" unique_id=1229200117]
+position = Vector2(862, -19)
+shape = SubResource("RectangleShape2D_r657h")
+
+[node name="Sprite 2D" type="Sprite2D" parent="Node2D/player6" unique_id=1354102643]
+position = Vector2(862, -19)
+scale = Vector2(0.2920681, 0.3851352)
+texture = ExtResource("2_112p8")
+
+[node name="Pickup Area" type="Area2D" parent="Node2D/player6" unique_id=492176181]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/player6/Pickup Area" unique_id=2089848234]
+position = Vector2(862, -19)
+shape = SubResource("RectangleShape2D_r657h")
+
+[node name="HeldDeadGuy" type="Sprite2D" parent="Node2D/player6" unique_id=1080672205]
+visible = false
+position = Vector2(25.999985, 23)
+rotation = -0.82928896
+scale = Vector2(0.9122621, 0.7116149)
+texture = ExtResource("3_112p8")
+
+[node name="PngtreeHalloweenHorrorRedBloodstainPngImage6174065" type="Sprite2D" parent="Node2D/player6/HeldDeadGuy" unique_id=657695426]
+position = Vector2(-15.087128, 10.091339)
+rotation = 1.5867164
+scale = Vector2(0.77673, 0.8861944)
+skew = 0.010239601
+texture = ExtResource("5_qn3nj")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Node2D/player6" unique_id=2086796366]
+
+[node name="DeadGuyDisplay" type="Label" parent="Node2D/player6/CanvasLayer" unique_id=1769415582]
+offset_right = 40.0
+offset_bottom = 23.0
+
 [node name="player4" type="CharacterBody2D" parent="Node2D" unique_id=296352965 groups=["player"]]
 position = Vector2(-43, 111)
 collision_mask = 5
@@ -148,6 +228,46 @@ texture = ExtResource("5_qn3nj")
 [node name="CanvasLayer" type="CanvasLayer" parent="Node2D/player4" unique_id=1521931546]
 
 [node name="DeadGuyDisplay" type="Label" parent="Node2D/player4/CanvasLayer" unique_id=1415139572]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="player7" type="CharacterBody2D" parent="Node2D" unique_id=1867570028 groups=["player"]]
+position = Vector2(-43, 111)
+collision_mask = 5
+script = ExtResource("1_j2q8x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/player7" unique_id=1459401801]
+position = Vector2(185, 224)
+shape = SubResource("RectangleShape2D_r657h")
+
+[node name="Sprite 2D" type="Sprite2D" parent="Node2D/player7" unique_id=458051256]
+position = Vector2(185, 224)
+scale = Vector2(0.2920681, 0.3851352)
+texture = ExtResource("2_112p8")
+
+[node name="Pickup Area" type="Area2D" parent="Node2D/player7" unique_id=468345354]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/player7/Pickup Area" unique_id=1995994277]
+position = Vector2(185, 224)
+shape = SubResource("RectangleShape2D_r657h")
+
+[node name="HeldDeadGuy" type="Sprite2D" parent="Node2D/player7" unique_id=967794214]
+visible = false
+position = Vector2(25.999985, 23)
+rotation = -0.82928896
+scale = Vector2(0.9122621, 0.7116149)
+texture = ExtResource("3_112p8")
+
+[node name="PngtreeHalloweenHorrorRedBloodstainPngImage6174065" type="Sprite2D" parent="Node2D/player7/HeldDeadGuy" unique_id=1240025895]
+position = Vector2(-15.087128, 10.091339)
+rotation = 1.5867164
+scale = Vector2(0.77673, 0.8861944)
+skew = 0.010239601
+texture = ExtResource("5_qn3nj")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Node2D/player7" unique_id=1156723154]
+
+[node name="DeadGuyDisplay" type="Label" parent="Node2D/player7/CanvasLayer" unique_id=620731515]
 offset_right = 40.0
 offset_bottom = 23.0
 
@@ -241,10 +361,10 @@ texture = ExtResource("5_qn3nj")
 [node name="CanvasLayer" type="CanvasLayer" parent="Node2D/player2" unique_id=1937176727]
 
 [node name="DeadGuyDisplay" type="Label" parent="Node2D/player2/CanvasLayer" unique_id=1540557217]
-offset_left = 1078.0
-offset_top = 7.0
-offset_right = 1143.0
-offset_bottom = 30.0
+offset_left = 1083.0
+offset_top = 2.0
+offset_right = 1148.0
+offset_bottom = 25.0
 text = "Score : 0"
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=252674205]
@@ -275,6 +395,9 @@ position = Vector2(1240, 329)
 shape = SubResource("RectangleShape2D_26u50")
 
 [connection signal="area_entered" from="Node2D/player/Pickup Area" to="Node2D/player" method="_on_pickup_area_area_entered"]
+[connection signal="area_entered" from="Node2D/player5/Pickup Area" to="Node2D/player5" method="_on_pickup_area_area_entered"]
+[connection signal="area_entered" from="Node2D/player6/Pickup Area" to="Node2D/player6" method="_on_pickup_area_area_entered"]
 [connection signal="area_entered" from="Node2D/player4/Pickup Area" to="Node2D/player4" method="_on_pickup_area_area_entered"]
+[connection signal="area_entered" from="Node2D/player7/Pickup Area" to="Node2D/player7" method="_on_pickup_area_area_entered"]
 [connection signal="area_entered" from="Node2D/player3/Pickup Area" to="Node2D/player3" method="_on_pickup_area_area_entered"]
 [connection signal="area_entered" from="Node2D/player2/Pickup Area" to="Node2D/player2" method="_on_pickup_area_area_entered"]
