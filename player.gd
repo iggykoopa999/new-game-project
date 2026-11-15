@@ -2,10 +2,18 @@ extends CharacterBody2D
 
 var DeadGuy_count = 0
 
+var speed = 500
+
+func _ready():
+	velocity = Vector2 (-200,200).normalized() * speed
+	
 func _physics_process(delta):
-	var input_direction = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
-	velocity = input_direction * 400
-	move_and_slide()
+	var collision = move_and_collide(velocity * delta)
+	if collision:
+		velocity = velocity.bounce(collision.get_normal())
+
+
+
 
 func _on_pickup_area_area_entered(area: Area2D) -> void:
 	if area.is_in_group("dead guy") and not $HeldDeadGuy.visible:
