@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dgemna2cprj7k" path="res://player.gd" id="1_j2q8x"]
 [ext_resource type="Script" uid="uid://biyvqexlq5hng" path="res://therealplayer.gd" id="1_l6pdb"]
+[ext_resource type="Texture2D" uid="uid://b4aco0xi5srku" path="res://d44e509c9daa8bd1750017094f16bfcd.jpg" id="1_qn3nj"]
 [ext_resource type="Texture2D" uid="uid://bhgsh06nhaej0" path="res://download.jpg" id="2_112p8"]
 [ext_resource type="Texture2D" uid="uid://de5ybx1yjm0ef" path="res://download (1).jpg" id="3_112p8"]
 [ext_resource type="Texture2D" uid="uid://dr0uuvd6kclq0" path="res://pngtree-halloween-horror-red-bloodstain-png-image_6174065.png" id="5_qn3nj"]
@@ -37,30 +38,36 @@ size = Vector2(176, 667.5)
 [node name="Node2D" type="Node2D" parent="." unique_id=30142450]
 position = Vector2(115, 36)
 
+[node name="D44e509c9Daa8Bd1750017094f16Bfcd" type="Sprite2D" parent="Node2D" unique_id=861755862]
+position = Vector2(472.00003, 292.49997)
+scale = Vector2(0.76458335, 0.71203697)
+texture = ExtResource("1_qn3nj")
+
 [node name="THEREALPLAYER" type="CharacterBody2D" parent="Node2D" unique_id=1312716994]
 position = Vector2(-115, -36)
 script = ExtResource("1_l6pdb")
 
 [node name="Sprite2D" type="Sprite2D" parent="Node2D/THEREALPLAYER" unique_id=74914955]
 
-[node name="PottermoreGiantClutchingDeerConceptArtCropped" type="Sprite2D" parent="Node2D/THEREALPLAYER/Sprite2D" unique_id=805079944]
+[node name="PottermoreGiantClutchingDeerConceptArtCropped" type="Sprite2D" parent="Node2D/THEREALPLAYER" unique_id=805079944]
 position = Vector2(665.00006, 388.00003)
 scale = Vector2(0.1897507, 0.17094024)
 texture = ExtResource("7_qn3nj")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/THEREALPLAYER/Sprite2D/PottermoreGiantClutchingDeerConceptArtCropped" unique_id=980755519]
-position = Vector2(-0.0007324219, 0)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/THEREALPLAYER" unique_id=980755519]
+position = Vector2(664.99994, 388.00003)
+scale = Vector2(0.1897507, 0.17094024)
 shape = SubResource("RectangleShape2D_ed7rr")
 
 [node name="Cave" type="Area2D" parent="Node2D" unique_id=1938549465 groups=["Cave"]]
 
 [node name="Sprite2D" type="Sprite2D" parent="Node2D/Cave" unique_id=417993612]
-position = Vector2(969.00006, 34.000008)
+position = Vector2(963.00006, 447)
 scale = Vector2(0.85810775, 0.89864874)
 texture = ExtResource("5_tda05")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Cave" unique_id=1894813215]
-position = Vector2(968.625, 35)
+position = Vector2(962, 447)
 scale = Vector2(1.695946, 2.0810812)
 shape = SubResource("RectangleShape2D_c3adt")
 
@@ -150,16 +157,16 @@ collision_mask = 5
 script = ExtResource("1_j2q8x")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/player3" unique_id=2110946865]
-position = Vector2(1043.9496, 456.5)
+position = Vector2(758, 395)
 shape = SubResource("RectangleShape2D_r657h")
 
 [node name="Sprite 2D" type="Sprite2D" parent="Node2D/player3" unique_id=231537291]
-position = Vector2(1043.9496, 456.5)
+position = Vector2(758, 395)
 scale = Vector2(0.2920681, 0.3851352)
 texture = ExtResource("2_112p8")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/player3" unique_id=949940169]
-position = Vector2(1043.9496, 456.5)
+position = Vector2(758, 394)
 shape = SubResource("RectangleShape2D_r657h")
 
 [node name="Pickup Area" type="Area2D" parent="Node2D/player3" unique_id=1627890303]
