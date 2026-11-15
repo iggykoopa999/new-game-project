@@ -14,13 +14,21 @@ func _physics_process(delta):
 		velocity = velocity.bounce(collision.get_normal())
 
 
-func _on_pickup_area_area_entered(area: Area2D) -> void:
-	if area.is_in_group("Cave"):
-		visible = false
-		DeadGuy_count +=1
-		$CanvasLayer/DeadGuyDisplay.text = "DeadGuy: " + str(DeadGuy_count)
-		queue_free()
+var has_eaten: bool = false
 
+func _on_pickup_area_area_entered(area: Area2D) -> void:
+	if has_eaten:
+		return
+		
+	if area.is_in_group("barriers"):
+		has_eaten = true
+		
+		for child in area.get_children():
+			if child is Sprite2D:
+				child.hide()
+			elif child is CollisionShape2D:
+				child.queue_free()
+		queue_free()
 
 @onready var timer = $Timer
 
