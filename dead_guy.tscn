@@ -3,14 +3,15 @@
 [ext_resource type="Texture2D" uid="uid://de5ybx1yjm0ef" path="res://download (1).jpg" id="1_c3adt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_l6pdb"]
-size = Vector2(256, 148)
+size = Vector2(41, 23)
 
 [node name="Dead Guy" type="Area2D" unique_id=1579342386 groups=["dead guy"]]
 
 [node name="Download(1)" type="Sprite2D" parent="." unique_id=258890243]
-position = Vector2(-165, 42)
+position = Vector2(477.5, 301.5)
+scale = Vector2(0.16015628, 0.1554054)
 texture = ExtResource("1_c3adt")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=803916701]
-position = Vector2(-165, 42)
+position = Vector2(477.5, 301.5)
 shape = SubResource("RectangleShape2D_l6pdb")

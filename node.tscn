@@ -1,14 +1,18 @@
 [gd_scene format=3 uid="uid://bhss2rc30pepk"]
 
 [ext_resource type="Script" uid="uid://dgemna2cprj7k" path="res://player.gd" id="1_j2q8x"]
+[ext_resource type="Script" uid="uid://biyvqexlq5hng" path="res://therealplayer.gd" id="1_l6pdb"]
 [ext_resource type="Texture2D" uid="uid://bhgsh06nhaej0" path="res://download.jpg" id="2_112p8"]
 [ext_resource type="Texture2D" uid="uid://de5ybx1yjm0ef" path="res://download (1).jpg" id="3_112p8"]
-[ext_resource type="PackedScene" uid="uid://ndr3uu7qxquq" path="res://dead_guy.tscn" id="4_bss38"]
 [ext_resource type="Texture2D" uid="uid://dr0uuvd6kclq0" path="res://pngtree-halloween-horror-red-bloodstain-png-image_6174065.png" id="5_qn3nj"]
 [ext_resource type="Texture2D" uid="uid://c8rttqu5bq1j5" path="res://download (2).jpg" id="5_tda05"]
+[ext_resource type="Texture2D" uid="uid://c3ebf8m4j8mpt" path="res://PottermoreGiantClutchingDeerConceptArt_-_cropped.webp" id="7_qn3nj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ed7rr"]
+size = Vector2(727.2702, 1169.9998)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c3adt"]
-size = Vector2(149.17924, 150.88309)
+size = Vector2(75.0319, 63.428566)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r657h"]
 size = Vector2(47.4375, 56.5)
@@ -33,15 +37,30 @@ size = Vector2(176, 667.5)
 [node name="Node2D" type="Node2D" parent="." unique_id=30142450]
 position = Vector2(115, 36)
 
+[node name="THEREALPLAYER" type="CharacterBody2D" parent="Node2D" unique_id=1312716994]
+position = Vector2(-115, -36)
+script = ExtResource("1_l6pdb")
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D/THEREALPLAYER" unique_id=74914955]
+
+[node name="PottermoreGiantClutchingDeerConceptArtCropped" type="Sprite2D" parent="Node2D/THEREALPLAYER/Sprite2D" unique_id=805079944]
+position = Vector2(665.00006, 388.00003)
+scale = Vector2(0.1897507, 0.17094024)
+texture = ExtResource("7_qn3nj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/THEREALPLAYER/Sprite2D/PottermoreGiantClutchingDeerConceptArtCropped" unique_id=980755519]
+position = Vector2(-0.0007324219, 0)
+shape = SubResource("RectangleShape2D_ed7rr")
+
 [node name="Cave" type="Area2D" parent="Node2D" unique_id=1938549465 groups=["Cave"]]
 
 [node name="Sprite2D" type="Sprite2D" parent="Node2D/Cave" unique_id=417993612]
-position = Vector2(1546.5, 478)
-scale = Vector2(1.695946, 2.0810812)
+position = Vector2(969.00006, 34.000008)
+scale = Vector2(0.85810775, 0.89864874)
 texture = ExtResource("5_tda05")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Cave" unique_id=1894813215]
-position = Vector2(1545.5, 481.00006)
+position = Vector2(968.625, 35)
 scale = Vector2(1.695946, 2.0810812)
 shape = SubResource("RectangleShape2D_c3adt")
 
@@ -217,15 +236,6 @@ texture = ExtResource("5_qn3nj")
 [node name="DeadGuyDisplay" type="Label" parent="Node2D/player2/CanvasLayer" unique_id=1540557217]
 offset_right = 40.0
 offset_bottom = 23.0
-
-[node name="DeadGuy" parent="Node2D" unique_id=1579342386 instance=ExtResource("4_bss38")]
-position = Vector2(1782.5, -153)
-
-[node name="DeadGuy2" parent="Node2D" unique_id=453539701 instance=ExtResource("4_bss38")]
-position = Vector2(1716.5, 186)
-
-[node name="DeadGuy3" parent="Node2D" unique_id=2050660203 instance=ExtResource("4_bss38")]
-position = Vector2(1716.5, 12)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=252674205]
 disable_mode = 1
