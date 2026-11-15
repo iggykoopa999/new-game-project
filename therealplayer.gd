@@ -17,4 +17,4 @@ func _on_pickup_area_area_entered(area: Area2D) -> void:
 	if area.is_in_group("Cave") and $HeldDeadGuy.visible:
 		$HeldDeadGuy.visible = false
 		DeadGuy_count +=1
-		$CanvasLayer/DeadGuyDisplay.text = "score: " + str(DeadGuy_count)
+		$CanvasLayer/DeadGuyDisplay.text = "Score : " + str(DeadGuy_count)
