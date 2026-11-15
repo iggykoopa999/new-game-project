@@ -1125,16 +1125,16 @@ size = Vector2(432.14597, 465.07483)
 size = Vector2(66, 52)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_oy2km"]
-size = Vector2(55.13519, 10.425001)
+size = Vector2(64.77178, 10.425001)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ob602"]
 size = Vector2(14.024999, 39.525)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e7ael"]
-size = Vector2(1615, 250.5)
+size = Vector2(1681, 250.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_26u50"]
-size = Vector2(176, 667.5)
+size = Vector2(246, 667.5)
 
 [node name="Node" type="Node" unique_id=962992903]
 script = ExtResource("1_r657h")
@@ -1259,23 +1259,75 @@ collision_mask = 5
 script = ExtResource("1_j2q8x")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/player4" unique_id=2007602328]
-position = Vector2(956, 399)
+position = Vector2(879, 336)
 shape = SubResource("RectangleShape2D_r657h")
 
 [node name="Sprite 2D" type="Sprite2D" parent="Node2D/player4" unique_id=1403708316]
-position = Vector2(957, 397)
+position = Vector2(880, 337)
 scale = Vector2(0.11979044, 0.12210067)
 texture = ExtResource("8_l6pdb")
 
 [node name="Pickup Area" type="Area2D" parent="Node2D/player4" unique_id=584988350]
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/player4/Pickup Area" unique_id=393368802]
-position = Vector2(956, 399)
+position = Vector2(879, 336)
 shape = SubResource("RectangleShape2D_r657h")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="Node2D/player4" unique_id=1521931546]
 
 [node name="DeadGuyDisplay" type="Label" parent="Node2D/player4/CanvasLayer" unique_id=1415139572]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="player9" type="CharacterBody2D" parent="Node2D" unique_id=278266791 groups=["player"]]
+position = Vector2(-43, 111)
+collision_mask = 5
+script = ExtResource("1_j2q8x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/player9" unique_id=1873915797]
+position = Vector2(783, 397)
+shape = SubResource("RectangleShape2D_r657h")
+
+[node name="Sprite 2D" type="Sprite2D" parent="Node2D/player9" unique_id=470628554]
+position = Vector2(783.00006, 396)
+scale = Vector2(0.11979044, 0.12210067)
+texture = ExtResource("8_l6pdb")
+
+[node name="Pickup Area" type="Area2D" parent="Node2D/player9" unique_id=1314990699]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/player9/Pickup Area" unique_id=29076406]
+position = Vector2(783, 397)
+shape = SubResource("RectangleShape2D_r657h")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Node2D/player9" unique_id=555656022]
+
+[node name="DeadGuyDisplay" type="Label" parent="Node2D/player9/CanvasLayer" unique_id=810738549]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="player10" type="CharacterBody2D" parent="Node2D" unique_id=1201632734 groups=["player"]]
+position = Vector2(-43, 111)
+collision_mask = 5
+script = ExtResource("1_j2q8x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/player10" unique_id=1999497915]
+position = Vector2(953, 262)
+shape = SubResource("RectangleShape2D_r657h")
+
+[node name="Sprite 2D" type="Sprite2D" parent="Node2D/player10" unique_id=231009685]
+position = Vector2(953.00006, 262)
+scale = Vector2(0.11979044, 0.12210067)
+texture = ExtResource("8_l6pdb")
+
+[node name="Pickup Area" type="Area2D" parent="Node2D/player10" unique_id=2073455805]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/player10/Pickup Area" unique_id=1639639267]
+position = Vector2(953, 262)
+shape = SubResource("RectangleShape2D_r657h")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Node2D/player10" unique_id=271591776]
+
+[node name="DeadGuyDisplay" type="Label" parent="Node2D/player10/CanvasLayer" unique_id=790315704]
 offset_right = 40.0
 offset_bottom = 23.0
 
@@ -1374,7 +1426,7 @@ texture = ExtResource("8_l6pdb")
 [node name="Pickup Area" type="Area2D" parent="Node2D/player2" unique_id=1686214851]
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/player2/Pickup Area" unique_id=885755622]
-position = Vector2(965, 335)
+position = Vector2(964, 335)
 shape = SubResource("RectangleShape2D_r657h")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="Node2D/player2" unique_id=1937176727]
@@ -1393,7 +1445,7 @@ wait_time = 5.0
 disable_mode = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1365422216]
-position = Vector2(576, -104.25)
+position = Vector2(557.5, -104.25)
 scale = Vector2(25.890907, 20)
 shape = SubResource("RectangleShape2D_oy2km")
 
@@ -1407,19 +1459,21 @@ shape = SubResource("RectangleShape2D_ob602")
 [node name="StaticBody2D3" type="StaticBody2D" parent="." unique_id=12639971]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3" unique_id=1898417520]
-position = Vector2(591.5, 773.75)
+position = Vector2(558.5, 773.75)
 shape = SubResource("RectangleShape2D_e7ael")
 
 [node name="StaticBody2D4" type="StaticBody2D" parent="." unique_id=958843554]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D4" unique_id=1170695080]
-position = Vector2(1240, 329)
+position = Vector2(1275, 329)
 shape = SubResource("RectangleShape2D_26u50")
 
 [connection signal="area_entered" from="Node2D/player/Pickup Area" to="Node2D/player" method="_on_pickup_area_area_entered"]
 [connection signal="area_entered" from="Node2D/player5/Pickup Area" to="Node2D/player5" method="_on_pickup_area_area_entered"]
 [connection signal="area_entered" from="Node2D/player6/Pickup Area" to="Node2D/player6" method="_on_pickup_area_area_entered"]
 [connection signal="area_entered" from="Node2D/player4/Pickup Area" to="Node2D/player4" method="_on_pickup_area_area_entered"]
+[connection signal="area_entered" from="Node2D/player9/Pickup Area" to="Node2D/player9" method="_on_pickup_area_area_entered"]
+[connection signal="area_entered" from="Node2D/player10/Pickup Area" to="Node2D/player10" method="_on_pickup_area_area_entered"]
 [connection signal="area_entered" from="Node2D/player7/Pickup Area" to="Node2D/player7" method="_on_pickup_area_area_entered"]
 [connection signal="area_entered" from="Node2D/player3/Pickup Area" to="Node2D/player3" method="_on_pickup_area_area_entered"]
 [connection signal="area_entered" from="Node2D/player8/Pickup Area" to="Node2D/player8" method="_on_pickup_area_area_entered"]
