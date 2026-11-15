@@ -6,16 +6,31 @@
 [ext_resource type="Script" uid="uid://cda7f7pvv40ta" path="res://node.gd" id="1_r657h"]
 [ext_resource type="Texture2D" uid="uid://d4hyje3p6oefy" path="res://Screenshot 2026-11-15 104921.png" id="3_qn3nj"]
 [ext_resource type="Texture2D" uid="uid://d0g2m5gtghc2v" path="res://Screenshot 2026-11-15 103246.png" id="4_qn3nj"]
+[ext_resource type="Texture2D" uid="uid://bykk0lmp4x0i5" path="res://Screenshot 2026-11-15 113430.png" id="6_l6pdb"]
 [ext_resource type="Texture2D" uid="uid://cs25wxt3ux4t4" path="res://Screenshot 2026-11-15 102031.png" id="7_l6pdb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c3adt"]
 size = Vector2(41.274895, 24.025974)
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_2k508"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_qn3nj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_l6pdb")
+}],
+"loop": 2,
+"name": &"Run",
+"speed": 10.0
+}]
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ed7rr"]
-size = Vector2(445.32114, 501.63733)
+size = Vector2(445.32114, 478.96857)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r657h"]
-size = Vector2(61.769165, 50.625008)
+size = Vector2(53, 40)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_oy2km"]
 size = Vector2(55.13519, 10.425001)
@@ -56,13 +71,14 @@ shape = SubResource("RectangleShape2D_c3adt")
 position = Vector2(-115, -36)
 script = ExtResource("1_l6pdb")
 
-[node name="PottermoreGiantClutchingDeerConceptArtCropped" type="Sprite2D" parent="Node2D/Cave/THEREALPLAYER" unique_id=805079944]
-position = Vector2(235, 66.00001)
-scale = Vector2(0.13122524, 0.13169985)
-texture = ExtResource("4_qn3nj")
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Node2D/Cave/THEREALPLAYER" unique_id=616789202]
+position = Vector2(68, 54)
+scale = Vector2(0.135596, 0.1539004)
+sprite_frames = SubResource("SpriteFrames_2k508")
+animation = &"Run"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Cave/THEREALPLAYER" unique_id=980755519]
-position = Vector2(236.00002, 66)
+position = Vector2(68, 53.9375)
 scale = Vector2(0.1897507, 0.17094024)
 shape = SubResource("RectangleShape2D_ed7rr")
 
@@ -83,7 +99,7 @@ texture = ExtResource("7_l6pdb")
 [node name="Pickup Area" type="Area2D" parent="Node2D/player" unique_id=537029618]
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Node2D/player/Pickup Area" unique_id=2032454031]
-position = Vector2(367.11542, -93.6875)
+position = Vector2(366.5, -94)
 shape = SubResource("RectangleShape2D_r657h")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="Node2D/player" unique_id=449165330]
