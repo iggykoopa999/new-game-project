@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://mnwrs2720gui" path="res://Screenshot_2026-11-15_132019-removebg-preview.png" id="9_f0urt"]
 [ext_resource type="Texture2D" uid="uid://ckhildgbiim3d" path="res://Screenshot_2026-11-15_132143-removebg-preview.png" id="10_jfkdj"]
 [ext_resource type="Texture2D" uid="uid://db8jh65cpr2og" path="res://Screenshot_2026-11-15_104352-removebg-preview.png" id="11_jfkdj"]
+[ext_resource type="Texture2D" uid="uid://p58fpufahghq" path="res://Screenshot 2026-11-15 153707.png" id="12_436f3"]
 [ext_resource type="Texture2D" uid="uid://ov4rqxpvx1yk" path="res://premium_vector-1747805833449-d1ebb1f5666e.jpg" id="12_wt6go"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r657h"]
@@ -1513,8 +1514,12 @@ shape = SubResource("RectangleShape2D_ed7rr")
 
 [node name="game_over" type="Sprite2D" parent="." unique_id=1251945332]
 visible = false
-position = Vector2(588, 325)
-scale = Vector2(0.396, 0.325)
+position = Vector2(541.00006, 340)
+scale = Vector2(1.4553676, 1.3316108)
+texture = ExtResource("12_436f3")
+
+[node name="PremiumVector1747805833449D1Ebb1f5666e" type="Sprite2D" parent="." unique_id=1062812938]
+position = Vector2(-2469, 1324)
 texture = ExtResource("12_wt6go")
 
 [connection signal="area_entered" from="Node2D/player/Pickup Area" to="Node2D/player" method="_on_pickup_area_area_entered"]
